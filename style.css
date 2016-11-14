@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+input, label {
+  display: block;
+}
+
+input {
+  cursor: text;
+}
+
+#container {
+  padding-top: 40px;
+}
+
+.studentsTable {
+  text-align: center;
+  padding-top: 50px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tfoot tr td {
+  background-color: #ededed;
+}
+
+select {
+/*  border: 1px solid #111;*/
+/*  background: transparent;*/
+  border: none;
+  width: 180px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+/*  border: 1px solid #ccc;*/
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(arrows.svg) 96% / 15% no-repeat #eee;
+}
+/*
+tr:nth-child(even) {
+    background-color: #dddddd;
+}*/

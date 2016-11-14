@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grades App</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+  </head>    
+  <body>
+    
+    <div class="studentsTable">
+      <table>
+        <tbody>
+          <tr class="tableHeader">
+            <th>Nazwisko i imię</th>
+            <th>Ocena z zachowania</th>
+            <th>
+              <select class="subject">
+                <option value="mathematics">Matematyka</option>
+                <option value="physics">Fizyka</option>
+                <option value="computerScience">Informatyka</option>
+              </select>
+            </th>
+            <th>Ocena średnia</th>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id=allGradesAverage>Średnia wszystkich ocen: </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+      
+    <div id="container">
+      <label for="name">Nazwisko i imię ucznia</label>
+      <input type="text" id=name>
+      <br>
+      <label for="behavior">Ocena z zachowania</label>
+      <input type="text" id=behavior>
+      <br>
+      <label for="mathematics">Oceny z matematyki</label>
+      <input type="text" id=mathematics>
+      <br>
+      <button id="addStudent">Dodaj ucznia</button>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="grades.js"></script>
+  </body>
+</html>
