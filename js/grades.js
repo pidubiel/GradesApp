@@ -52,7 +52,7 @@ function averageGrade() {
   for (var i = 0; i < array2d.length; i++) {
     allGradesSum += array2d[i];
   };
-  return (allGradesSum/array2d.length).toFixed(1);
+  return (allGradesSum/array2d.length).toFixed(2);
 };
 
 
@@ -87,7 +87,7 @@ $("#addStudent").click(function() {
   };
   studentsList.push(new student(nameAndSurname, behaviorGrade, gradesArray));
   appendTable();
-  $("#allGradesAverage").html("Średnia całej klasy: " + averageGrade());
+  $("#allGradesAverage").html("Średnia całej klasy:   " + averageGrade());
   //Wyzerowanie wartości inputów
   removeValues();
 });

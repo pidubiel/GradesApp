@@ -1,0 +1,98 @@
+$darkgrey: #696969
+$lightgrey: #ddd
+$main-color: #fdd189
+$blue: #42a6d6
+
+@import 'form_partial/form'
+
+*
+  box-sizing: border-box
+
+body
+  background-color: #fdd189
+  padding: 20px
+  color: #3c3c3c
+  text-transform: uppercase
+  font-family: Helvetica
+
+.wrapper
+  max-width: 900px
+  position: relative
+  margin: 2em auto 2em auto
+  
+table
+  border-collapse: collapse
+  width: 100%
+
+h2
+  text-transform: none
+  font-weight: normal
+  letter-spacing: .06em
+
+th
+  background-color: $lightgrey
+
+th, td
+  border: 1px solid $darkgrey
+  padding: 8px
+  line-height: 1.5
+  text-align: left
+  
+
+//Stack rows vertically on small screens
+
+@media (max-width: 700px)
+  thead tr
+    position: absolute
+    top: -9999em
+    left: -9999em
+  
+  tr 
+    border: 2px solid $darkgrey
+    border-bottom: 0
+  
+  tr + tr
+    margin-top: 2.2em
+  //Get table cells to act like rows
+  tr, td
+    display: block
+  
+  td
+    border: none
+    border-bottom: 0.125em solid $darkgrey
+    //Leave a space for data labels
+    padding-left: 50%
+  
+  //Add data labels
+  td:before
+    content: attr(data-label)
+    display: inline-block
+    font-weight: bold
+    line-height: 1.5
+    margin-left: -100%
+    width: 100%
+  
+  tbody tr td:first-child
+    background: $lightgrey
+
+//Stack labels vertically on smaller screens
+@media (max-width: 500px)
+  td
+    padding-left: 0.75em
+  
+  td:before
+    display: block
+    margin-bottom: 0.2em
+    margin-left: 0
+  
+
+    
+    
+    
+    
+
+
+
+
+
+
